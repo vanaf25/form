@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browser</title>
+</head>
+<body>
+  
+<img src=    "https://cdn.onemars.net/sites/perfect-fit_pl_W7ZCj_JAs8/image/large_kot-nie-chce-jeoe-mokrej-karmy-sprawdc-czy-powinieneo-si-r-przejmowae_1637151639646_1686300799201.png",
+ alt="Obrzek"/>
+    <button id="0">Kot</button>
+  <button id="1">Pies</button>
+    <button id="2">Lew</button>
+  <script>
+  const sources=[
+    "https://cdn.onemars.net/sites/perfect-fit_pl_W7ZCj_JAs8/image/large_kot-nie-chce-jeoe-mokrej-karmy-sprawdc-czy-powinieneo-si-r-przejmowae_1637151639646_1686300799201.png",
+    "https://www.telekarma.pl/userfiles/images/aktualnosci/305464337-760x500.jpg",
+    "https://zasoby.ekologia.pl/artykulyNew/27356/xxl/shutterstock-314138519_800x600.jpg"
+  ]
+  
+    const img=document.querySelector("img");
+document.querySelectorAll("button").forEach(el=>{
+  el.addEventListener("click",()=>{
+    img.src=sources[el.id]
+  });
+});
+
+  </script>
+</body>
+</html>

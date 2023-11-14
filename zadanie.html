@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browser</title>
+</head>
+
+<body>
+<img src="https://smallart.pl/wp-content/uploads/2020/03/www.smallart.pl-obrazek-dla-ch%C5%82opca-obrazek-plakat-z-psem-buldogiem-owczarkiem-mopsem-beaglem-%C5%9Bmieszne-obrazki-na-%C5%9Bcian%C4%99-8.jpg" alt="Obrzek"/>
+    <button id="show">Show</button>
+  <button id="hidden">Ukryj</button>
+  <script>
+    const img=document.querySelector("img");
+document.querySelector("#show").addEventListener("click",()=>{
+  img.style.display="block";
+})
+document.querySelector("#hidden").addEventListener("click",()=>{
+  img.style.display="none";
+})
+
+  </script>
+</body>
+</html>
